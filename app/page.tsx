@@ -154,7 +154,7 @@ export default function Home() {
         ? "A PERFECT STALEMATE"
         : thinking
           ? "CALCULATING YOUR FATE..."
-          : "YOUR MOVE, HUMAN";
+          : "YOUR MOVE";
 
   return (
     <main className="page-shell">
