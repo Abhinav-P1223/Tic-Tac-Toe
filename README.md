@@ -15,6 +15,8 @@ npm install
 npm run build
 ```
 
+The build clears any stale or read-only `out` export before generating a fresh one, which also avoids permission errors on cached Netlify builds.
+
 Then upload the refreshed `out` folder.
 
 ## Deploy from GitHub
