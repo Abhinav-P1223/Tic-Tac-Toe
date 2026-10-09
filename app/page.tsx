@@ -161,9 +161,9 @@ export default function Home() {
       <div className="scanlines" />
 
       <header className="topbar">
-        <a className="brand" href="#top" aria-label="Gridlock home">
+        <a className="brand" href="#top" aria-label="Nova Nine home">
           <span className="brand-icon"><span /><span /><span /><span /></span>
-          <span>GRID<span className="brand-accent">LOCK</span></span>
+          <span>NOVA<span className="brand-accent"> / 09</span></span>
         </a>
         <div className="top-tag"><span className="live-dot" /> NEURAL ENGINE ONLINE</div>
       </header>
