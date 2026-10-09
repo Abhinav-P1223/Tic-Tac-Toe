@@ -158,8 +158,6 @@ export default function Home() {
 
   return (
     <main className="page-shell">
-      <div className="ambient ambient-one" />
-      <div className="ambient ambient-two" />
       <div className="scanlines" />
 
       <header className="topbar">
