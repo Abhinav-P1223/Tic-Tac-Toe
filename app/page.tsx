@@ -161,9 +161,9 @@ export default function Home() {
       <div className="scanlines" />
 
       <header className="topbar">
-        <a className="brand" href="#top" aria-label="Nova Nine home">
+        <a className="brand" href="#top" aria-label="Tic-Tac-Toe home">
           <span className="brand-icon"><span /><span /><span /><span /></span>
-          <span>NOVA<span className="brand-accent"> / 09</span></span>
+          <span><span className="brand-accent">X</span> <span className="brand-slash">/</span> O</span>
         </a>
         <div className="top-tag"><span className="live-dot" /> NEURAL ENGINE ONLINE</div>
       </header>

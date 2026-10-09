@@ -21,6 +21,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--lime); outline-
 .topbar { height: 90px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); position: relative; z-index: 6; }
 .brand { color: var(--paper); text-decoration: none; display: flex; align-items: center; gap: 11px; font-size: 16px; font-weight: 700; letter-spacing: .12em; }
 .brand-accent { color: var(--electric); }
+.brand-slash { color: #969bb2; font-size: .82em; margin: 0 2px; }
 .brand-icon { display: grid; width: 20px; height: 20px; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 3px; transform: rotate(-8deg); }
 .brand-icon span { border: 1.5px solid var(--lime); border-radius: 1px; }
 .brand-icon span:nth-child(2) { background: var(--electric); border-color: var(--electric); }
