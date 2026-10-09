@@ -170,10 +170,9 @@ export default function Home() {
 
       <section className="game-layout" id="top">
         <div className="intro-column">
-          <div className="eyebrow"><span>01</span><span className="eyebrow-line" /> THE CLASSIC, REWIRED</div>
           <h1>THINK<br />YOU CAN<br /><span>BEAT</span><br /><span className="machine-word">ABHINAV?</span></h1>
           <p className="intro-copy">You are X. Abhinav is the machine.<br />Challenge him online.</p>
-          <div className="difficulty-chip"><span className="chip-symbol">✳</span><span><b>IMPOSSIBLE</b><small>Minimax · Alpha-beta pruning</small></span></div>
+          <div className="difficulty-chip"><span className="chip-symbol">✳</span><span><b>IMPOSSIBLE TO BEAT</b><small>Abhinav uses alpha-beta pruning</small></span></div>
 
           <div className="scoreboard">
             <div className="score-heading"><span>SESSION DATA</span><span>ROUND {String(round).padStart(2, "0")}</span></div>
@@ -226,7 +225,6 @@ export default function Home() {
               <span className="button-arrow">↗</span>
             </button>
           </div>
-          <div className="board-caption"><span>THE GRID NEVER FORGETS</span><span>EST. ∞</span></div>
         </div>
       </section>
 
