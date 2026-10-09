@@ -1,6 +1,6 @@
-# Challenge Abhi — Tic-Tac-Toe
+# Challenge Abhinav — Tic-Tac-Toe
 
-A cyber space punk Tic-Tac-Toe game. You play X; Abhi is the O machine, using minimax with alpha-beta pruning. Anyone who opens the hosted site can challenge Abhi in their browser.
+A cyber space punk Tic-Tac-Toe game. You play X; Abhinav is the O machine, using minimax with alpha-beta pruning. Anyone who opens the hosted site can challenge Abhinav in their browser.
 
 ## Deploy to Netlify from this ZIP
 
