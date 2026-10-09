@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "TIC / TAC / TOE — The Grid Awaits",
-  description: "One mind. Nine squares. Can you outplay the machine?",
+  title: "Tic-Tac-Toe — Challenge Abhi",
+  description: "Play online against Abhi's minimax Tic-Tac-Toe machine.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

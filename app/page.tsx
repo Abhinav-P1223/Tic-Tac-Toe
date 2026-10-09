@@ -149,7 +149,7 @@ export default function Home() {
   const status = result === "win"
     ? "YOU TOOK THE GRID"
     : result === "loss"
-      ? "THE MACHINE WINS"
+      ? "ABHI WINS"
       : result === "draw"
         ? "A PERFECT STALEMATE"
         : thinking
@@ -165,14 +165,14 @@ export default function Home() {
           <span className="brand-icon"><span /><span /><span /><span /></span>
           <span><span className="brand-accent">X</span> <span className="brand-slash">/</span> O</span>
         </a>
-        <div className="top-tag"><span className="live-dot" /> NEURAL ENGINE ONLINE</div>
+          <div className="top-tag"><span className="live-dot" /> ABHI'S NEURAL ENGINE ONLINE</div>
       </header>
 
       <section className="game-layout" id="top">
         <div className="intro-column">
           <div className="eyebrow"><span>01</span><span className="eyebrow-line" /> THE CLASSIC, REWIRED</div>
-          <h1>THINK<br />YOU CAN<br /><span>BEAT THE</span><br /><span className="machine-word">MACHINE?</span></h1>
-          <p className="intro-copy">Nine squares. One merciless algorithm.<br />Make your move and see what happens.</p>
+          <h1>THINK<br />YOU CAN<br /><span>BEAT</span><br /><span className="machine-word">ABHI?</span></h1>
+          <p className="intro-copy">You are X. Abhi is the machine.<br />Challenge him online.</p>
           <div className="difficulty-chip"><span className="chip-symbol">✳</span><span><b>IMPOSSIBLE</b><small>Minimax · Alpha-beta pruning</small></span></div>
 
           <div className="scoreboard">
@@ -180,7 +180,7 @@ export default function Home() {
             <div className="score-row">
               <div className="score-item"><span className="score-label"><i className="score-dot human-dot" /> YOU <b>X</b></span><strong>{String(score.wins).padStart(2, "0")}</strong></div>
               <div className="score-divider" />
-              <div className="score-item"><span className="score-label"><i className="score-dot ai-dot" /> AI <b>O</b></span><strong>{String(score.losses).padStart(2, "0")}</strong></div>
+              <div className="score-item"><span className="score-label"><i className="score-dot ai-dot" /> ABHI <b>O</b></span><strong>{String(score.losses).padStart(2, "0")}</strong></div>
               <div className="score-divider" />
               <div className="score-item draw-score"><span className="score-label">DRAW</span><strong>{String(score.draws).padStart(2, "0")}</strong></div>
             </div>
@@ -192,7 +192,7 @@ export default function Home() {
           <div className={`status-bar ${result ? `status-${result}` : ""}`} aria-live="polite">
             <span className={`status-light ${thinking ? "is-thinking" : ""}`} />
             <span>{status}</span>
-            {!result && <span className="status-turn">{thinking ? "AI" : "X"}</span>}
+            {!result && <span className="status-turn">{thinking ? "ABHI" : "X"}</span>}
           </div>
 
           <div className="board-frame">
@@ -219,7 +219,7 @@ export default function Home() {
           </div>
 
           <div className="board-footer">
-            <div className="legend"><span><i className="legend-x">×</i> YOU</span><span><i className="legend-o" /> MACHINE</span></div>
+            <div className="legend"><span><i className="legend-x">×</i> YOU</span><span><i className="legend-o" /> ABHI</span></div>
             <button className="restart-button" onClick={restart}>
               <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 6V2m0 4h-4M4.3 7A6.5 6.5 0 1 1 3.5 11" /></svg>
               <span>NEW ROUND</span>
