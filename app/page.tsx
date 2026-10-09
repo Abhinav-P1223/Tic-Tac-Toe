@@ -171,7 +171,7 @@ export default function Home() {
       <section className="game-layout" id="top">
         <div className="intro-column">
           <h1>THINK<br />YOU CAN<br /><span>BEAT</span><br /><span className="machine-word">ABHINAV?</span></h1>
-          <p className="intro-copy">You’re playing with Abhinav.</p>
+          <p className="intro-copy">You’re playing with Abhinav.<br />Don’t blink.</p>
           <div className="difficulty-chip"><span className="chip-symbol">✳</span><span><b>IMPOSSIBLE TO BEAT</b><small>Abhinav uses alpha-beta pruning</small></span></div>
 
           <div className="scoreboard">

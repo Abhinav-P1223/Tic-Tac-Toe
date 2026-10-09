@@ -106,18 +106,27 @@ h1 .machine-word { color: var(--paper); -webkit-text-stroke: 1px var(--paper); }
   .scoreboard { margin-top: 32px; }
 }
 @media (max-width: 650px) {
-  .page-shell { padding: 0 22px; }
-  .topbar { height: 70px; }
-  .top-tag { font-size: 7px; letter-spacing: .08em; }
-  .brand { font-size: 14px; }
-  .game-layout { width: min(440px, 100%); display: flex; flex-direction: column; align-items: stretch; gap: 34px; padding: 37px 0 43px; }
+  .page-shell { min-height: 100svh; padding-left: max(18px, env(safe-area-inset-left)); padding-right: max(18px, env(safe-area-inset-right)); }
+  .topbar { height: 66px; }
+  .top-tag { font-size: 7px; letter-spacing: .07em; }
+  .brand { font-size: 13px; gap: 8px; }
+  .game-layout { width: min(440px, 100%); display: flex; flex-direction: column; align-items: stretch; gap: 26px; padding: 29px 0 calc(30px + env(safe-area-inset-bottom)); }
   .intro-column { padding: 0; }
-  h1 { font-size: clamp(65px, 16vw, 91px); margin-top: 21px; }
-  .intro-copy { margin: 17px 0; }
-  .scoreboard { display: none; }
+  h1 { font-size: clamp(60px, 15vw, 78px); margin: 20px 0 15px; line-height: .82; }
+  .intro-copy { font-size: 11px; margin: 15px 0; }
+  .scoreboard { display: block; width: 100%; margin-top: 23px; padding-top: 12px; }
+  .score-row { margin-top: 14px; }
+  .score-item > strong { font-size: 27px; }
+  .score-divider { height: 29px; }
   .board-column { width: 100%; justify-self: auto; }
-  .board-frame { padding: 9px; }
+  .board-topline { font-size: 8px; margin-bottom: 10px; }
+  .status-bar { min-height: 44px; }
+  .board-frame { padding: 8px; margin-top: 9px; }
   .board { gap: 5px; }
-  .footer { font-size: 7px; }
+  .square-number { font-size: 12px; }
+  .board-footer { gap: 8px; margin-top: 12px; }
+  .legend { gap: 10px; font-size: 7px; }
+  .restart-button { min-height: 44px; padding: 11px 9px; gap: 6px; }
+  .footer { min-height: 48px; font-size: 7px; gap: 12px; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; } }
